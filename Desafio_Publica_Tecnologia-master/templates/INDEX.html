@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Inserção de Dados</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='main.js'>
+    </script>
+
+    <style>
+
+        #botoes {
+            -moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
+            -webkit-box-shadow:inset 0px 39px 0px -24px #e67a73;
+            box-shadow:inset 0px 39px 0px -24px #e67a73;
+            background-color:#e4685d;
+            border-radius:4px;
+            border:1px solid #ffffff;
+            display:inline-block;
+            color:#ffffff;
+            font-family:arial;
+            font-size:15px;
+            font-weight:bold;
+            height:54px;
+            line-height:50px;
+            width:140px;
+            text-align:center;
+        }
+
+        #botoes:hover {
+            background-color:#96352e;
+            -webkit-box-shadow:inset 0px 39px 0px -24px #b1433b;
+        }
+
+        input[type=number]{   
+            border-radius:4px;
+            -moz-border-radius:4px;
+            -webkit-border-radius:4px;
+            box-shadow: 1px 1px 2px #e67a73;    
+            -moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
+            -webkit-box-shadow: 1px 1px 2px #000000;
+            background: white; 
+            border:1px solid #96352e;
+            width:350px;
+            height:45px;
+        }
+
+        #formulario{
+            margin-left: 30%;
+            margin-top: 20%;
+        }
+
+        ::placeholder{
+            text-align:center;
+            font-family:arial;
+            font-size:15px;
+            font-weight:bold;
+        }
+
+    </style>
+
+</head>
+<body>
+    <form action="/receber_valor" method="POST" id="formulario">
+        <input type="number" name="placar_do_jogo" placeholder="Insira o seu Placar">
+        <input type="submit" value="ENVIAR" id="botoes">
+    </form>
+        
+</body>
+</html>

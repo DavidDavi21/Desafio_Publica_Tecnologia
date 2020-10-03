@@ -2,7 +2,7 @@
 Repositório para o desafio lançado pela Pública Tecnologia, onde contém a resolução completa com os códigos e licença para uso.
 
 # Detalhes Técnicos
-__Tecnologias:__ Python e Bibliotecas (Flask e Peewee), SQLite e SQL HTML e CSS.
+__Tecnologias:__ Python e Bibliotecas (Flask e Peewee), SQLite, SQL, HTML, Jinja e CSS.
 
 __Instalar Bibliotecas:__ pip install Flask; pip install Peewee (no prompt de comando ou cmd).
 

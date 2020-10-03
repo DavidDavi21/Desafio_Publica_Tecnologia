@@ -16,13 +16,18 @@ class Partida(BaseModel):
     quebra_recorde_min = IntegerField()
     quebra_recorde_max = IntegerField()
 
-    def retornar():
-        return "numero de jogos: " + num_jogos
-
 if __name__ == "__main__":
 
 	if os.path.exists(arquivo):
 		os.remove(arquivo)
 	db.connect()
 	db.create_tables([Partida])
-print(Partida.retornar())
+partida = Partida.select()
+lista_numero_jogos = []
+for percorrer in partida:
+    lista_numero_jogos.append(percorrer.num_jogos)
+if len(lista_numero_jogos) == 0:
+    partidinha = Partida.create(num_jogos=0, placar=0, min_temporada=0, max_temporada=0, quebra_recorde_min=0, quebra_recorde_max=0)
+    print("Salvou os números zeros!")
+else:
+    print("Deu tudo certo.")

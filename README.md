@@ -10,4 +10,4 @@ __Instalar Python:__ Para instalar o Python vá na página __https://www.python.
 
 __Instalar Bibliotecas:__ Após a instalação do Python escreva os seguintes comandos no prompt de comando/cmd: ``pip install Flask`` e ``pip install Peewee``.
 
-__Como Executar:__ Estar dentro da pasta __Desafio_Publica_Tecnologia-master__ onde possui o arquivo servidor.py e inicializar o servidor pelo comando: ``python servidor.py`` (no prompt de comando/cmd). Em seguida abra no navegador o endereço __http://127.0.0.1:5000/__ e você terá acessso a plataforma e suas funcionalidades.
+__Como Executar:__ Ir pelo prompt de comando/cmd até a pasta __Desafio_Publica_Tecnologia-master__ onde possui o arquivo servidor.py e inicializar o servidor pelo comando: ``python servidor.py`` (no prompt de comando/cmd). Em seguida abra no navegador o endereço __http://127.0.0.1:5000/__ e você terá acessso a plataforma e suas funcionalidades.

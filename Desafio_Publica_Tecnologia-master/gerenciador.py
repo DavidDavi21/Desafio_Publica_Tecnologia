@@ -50,9 +50,8 @@ def salvar_dados_bd(contagem_num_jogos, placar, min_temporada, max_temporada, qu
     salvo = Partida.create(num_jogos=num_jogos, placar=placar, min_temporada=min_temporada, max_temporada=max_temporada, quebra_recorde_max=quebra_recorde_max, quebra_recorde_min=quebra_recorde_min)
     return True
 
-def deletar_dados(partida):
+def deletar_dados():
 
-    for contador in partida:
-        partida.contador = None
+    deletado = Partida.deletar_tabela()
 
     return True

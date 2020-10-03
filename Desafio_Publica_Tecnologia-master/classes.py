@@ -9,12 +9,20 @@ class BaseModel(Model):
         database = db
 
 class Partida(BaseModel):
-    num_jogos = IntegerField()
+    num_jogos = PrimaryKeyField()
     placar = IntegerField()
     min_temporada = IntegerField()
     max_temporada = IntegerField()
     quebra_recorde_min = IntegerField()
     quebra_recorde_max = IntegerField()
+
+    def deletar_tabela():
+
+        db.drop_tables([Partida])
+        db.create_tables([Partida])
+        partidinha = Partida.create(num_jogos=0, placar=0, min_temporada=0, max_temporada=0, quebra_recorde_min=0, quebra_recorde_max=0)
+        
+        return True
 
 if __name__ == "__main__":
 

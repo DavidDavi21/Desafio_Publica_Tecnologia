@@ -22,7 +22,7 @@ def mostrar_dados():
 
 @app.route("/zerar_valores")
 def zerar_valores():
-    deletar = (deletar_dados(partida=Partida.select()))
+    deletar = (deletar_dados())
     return redirect("/")
 
 app.run(debug=True)

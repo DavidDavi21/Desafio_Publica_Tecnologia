@@ -1,5 +1,5 @@
 # Desafio_Publica_Tecnologia
-Repositório para o desafio lançado para a pública tecnologia, onde contém a resolução completa.
+Repositório para o desafio lançado pela a pública tecnologia, onde contém a resolução completa.
 
 # Detalhes Técnicos
 __Tecnologias:__ Python e Bibliotecas (Flask e Peewee), SQLite e SQL HTML e CSS.

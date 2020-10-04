@@ -14,25 +14,20 @@ def organizar_dados(placar, partida):
         lista_placares[1].append(contador.max_temporada)
         segundo_contador = contador.num_jogos
 
-        if contador.quebra_recorde_max == 1:
-            quebra_recorde_max = 1
-            
-        if contador.quebra_recorde_min == 1:
-            quebra_recorde_min = 1
+        quebra_recorde_max = contador.quebra_recorde_max
+        quebra_recorde_min = contador.quebra_recorde_min
 
     if placar > lista_placares[1][-1]:
         max_temporada = placar
         if len(lista_placares[1]) != 1:
-            quebra_recorde_max = 1
-        else:
-            quebra_recorde_max = 0
+            quebra_recorde_max += 1
     else:
         max_temporada = lista_placares[1][-1]
 
     if placar < lista_placares[0][-1] or segundo_contador == 0:
         min_temporada = placar
         if len(lista_placares[0]) != 1:
-            quebra_recorde_min = 1
+            quebra_recorde_min += 1
         else:
             quebra_recorde_min = 0
     else:

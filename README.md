@@ -6,7 +6,7 @@ Repositório para o desafio lançado pela Pública Tecnologia, onde contém a re
 # Detalhes Técnicos
 __Tecnologias:__ Python e Bibliotecas (Flask e Peewee), SQLite, SQL, HTML, Jinja e CSS.
 
-__Instalar Python:__ Para instalar o Python vá na página __https://www.python.org/downloads/__ e instale a versão mais recente.
+__Instalar Python:__ Para instalar o Python vá na página __https://www.python.org/downloads/__ e instale a versão mais recente (na primeira tela de instalação habilite a opção 'Add Python 3.8 to PATH').
 
 __Instalar Bibliotecas:__ Após a instalação do Python escreva os seguintes comandos no prompt de comando/cmd: ``pip install Flask`` e ``pip install Peewee``.
 
